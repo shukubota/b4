@@ -1,0 +1,5 @@
+import h5py
+import numpy as np
+from netCDF4 import*
+
+with h5py.File("2A25.20000101.12049.7.HDF","r") as f

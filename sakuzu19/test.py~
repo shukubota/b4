@@ -1,0 +1,4 @@
+import h5py
+import numpy as np
+
+with h5py.File("T1PR2012010180472_2A25F0007.01","r") as f:
