@@ -1,0 +1,11 @@
+hovpyでデータファイルを作る
+北東方向　hovpy
+南西方向　hovback
+東西方向　hovhor
+
+plot_wh04test.py で作図
+plot_wh04.pyは使わない
+
+できたらfigure/wh04を適当な名前に変更する
+例えばwh04_breast
+
