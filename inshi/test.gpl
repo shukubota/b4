@@ -1,0 +1,2 @@
+splot "mondai10.dat"  using 2:3:4 w l title "mondai10"
+pause -0.005

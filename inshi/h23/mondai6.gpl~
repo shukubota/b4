@@ -1,0 +1,6 @@
+set polar
+omega=1.
+a=1.
+eps=1.
+plot a/(1.+eps*cos(t))
+pause -1 

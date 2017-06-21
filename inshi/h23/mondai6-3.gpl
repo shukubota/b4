@@ -1,0 +1,3 @@
+set polar
+plot "mondai6-3.dat" u 2:1 w p
+pause -1

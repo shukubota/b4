@@ -1,0 +1,9 @@
+i=0
+dt=0.001
+t=i*dt
+alpha=1.
+beta=1.
+set parametric
+splot cos(alpha*u),-sin(alpha*u),beta*u
+
+ 

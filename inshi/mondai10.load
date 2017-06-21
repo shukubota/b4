@@ -1,0 +1,8 @@
+set xrange[-1.:1.]
+set yrange[-1.:1.]
+set zrange[0.85:1.]
+splot "mondai10.dat" every ::::i*10 using 2:3:4 w l title "mondai10","mondai10.dat" every ::i*10::i*10 using 2:3:4 not w p pt 7 ps 3
+pause 0.005
+i=i+1
+print i
+if(i<130)reread

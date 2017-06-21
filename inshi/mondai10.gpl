@@ -1,0 +1,6 @@
+set terminal gif animate delay 25 optimize size 1600,900
+set terminal gif animate font "Helvetica,18"
+set output "mondai10.gif"
+
+i=1
+load "mondai10.load"

@@ -1,0 +1,13 @@
+i=0
+dt=0.001
+t=i*dt
+alpha=1.
+beta=5.
+set parametric
+set zrange[0:100]
+set urange[0:50]
+set sample 1000
+splot cos(alpha*u),-sin(alpha*u),beta*u
+
+pause -1
+ 

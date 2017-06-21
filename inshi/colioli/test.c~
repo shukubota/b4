@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(void){
+  int i;
+  double t;
+  FILE*filename="test.dat";
+  double v=1.,a=5.;
+  double dt=0.01;
+
+  for(i=0;i<1000;i++){
+    t=0.+i*dt;
+    x=

@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+#include<complex.h>
+
+int main(void){
+  double t,dt;
+  double complex s;
+  double S;
+  int i,j,k;
+  int num=1000;
+  double R=2.;
+  double complex z;
+
+  S=0.;
+ dt=R/num;
+
+  for(i=0;i<num;i++){
+    t=i*dt;
+    S+=dt*1./(1.+t*t*t*t);
+  }
+
+  printf("%f\n",S);
+
+  return 0;
+}

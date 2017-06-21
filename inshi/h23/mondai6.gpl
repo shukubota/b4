@@ -1,0 +1,7 @@
+set polar
+set rrange[-10:10]
+omega=1.
+a=1.
+eps=1.
+plot (cos(t))**(-1)
+pause -1 

@@ -1,0 +1,5 @@
+set xrange[0:1]
+set yrange[0:1]
+set zrange[0:0.05]
+splot x*y*(1.-x-y)
+pause -1

@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(void){
+  double r,rv,ra;
+  double th,thv,tha;
+  double t,dt;
+  double omega=1.57e0;
+  double c=1.e0;
+  double a=1.;
+  double J=a*a*omega;
+  int i,j,k;
+  int num=350000;
+  FILE*filename;
+
+  dt=0.0001;
+
+  filename=fopen("mondai6-3.dat","w");
+
+  //initial condition
+
+  r=a;
+  t=0.;
+  th=0.;
+  rv=0.;
+  thv=omega;
+
+  fprintf(filename,"%15.10e %15.10e\n",r,th);
+
+  for(i=0;i<num;i++){
+    t+=dt;
+    tha=-2.*rv*thv/r;
+    ra=c/(r*r*r)+r*thv*thv;
+    thv+=tha*dt;
+    rv+=ra*dt;
+    r+=rv*dt;
+    th+=thv*dt;
+
+    fprintf(filename,"%15.10e %15.10e\n",r,th);
+  }
+  fclose(filename);
+  return 0;
+}

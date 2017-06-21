@@ -1,0 +1,8 @@
+set xrange[-20:20]
+set yrange[-25:25]
+set zrange[-20:45]
+splot "mondai10.dat" every ::::i*100 using 2:3:4 w l title "mondai10"
+pause 0.005
+i=i+1
+print i
+if(i<200)reread

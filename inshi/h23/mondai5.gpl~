@@ -1,0 +1,2 @@
+splot x*y*(1.-x-y)
+pause -1
