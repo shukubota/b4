@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+convert -delay 80 -loop 0 figures/c/c*.png figures/c.gif
+convert -delay 80 -loop 0 figures/phi/phi*.png figures/phi.gif
